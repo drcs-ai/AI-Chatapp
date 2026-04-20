@@ -14,6 +14,4 @@ COPY --from=build /app/target/chatapp-0.0.1-SNAPSHOT.jar app.jar
 
 EXPOSE 8080
 
-ENV APP_PROFILE=local
-
 ENTRYPOINT ["java", "-jar", "/app/app.jar"]
