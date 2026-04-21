@@ -12,7 +12,9 @@ import java.util.Map;
 @RequestMapping("/api/chat")
 @CrossOrigin(origins = {
         "http://localhost:3000",
-        "http://localhost:5173"
+        "http://localhost:5173",
+        "https://ramai-chatapp.vercel.app",
+        "https://ai-chatapp-fawn.vercel.app"
 })
 public class ChatController {
 
