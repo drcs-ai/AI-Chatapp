@@ -1,7 +1,6 @@
 import type { Message } from "../types/Message";
 
-const BASE_URL = "http://localhost:8080/api/chat";
-
+const BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080/api/chat';
 export async function sendMessage(message: string): Promise<string> {
     const res = await fetch(`${BASE_URL}/send`, {
         method: "POST",
